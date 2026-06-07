@@ -369,6 +369,8 @@ export default function Page() {
                                 </TableCell>
                                 <TableCellMenu
                                   isSticky
+                                  // Keep the hover action overlay from floating over the Activity chart at narrow widths (#3470)
+                                  className="min-w-[7rem] overflow-hidden"
                                   popoverContent={
                                     <>
                                       <PopoverMenuItem
